@@ -1,0 +1,14 @@
+.btnsubmit {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.shopping-cart img{
+    width:40px;
+    margin-left: 1110px;
+}
+

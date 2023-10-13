@@ -2,77 +2,175 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/stylesproducts.css">
+    <title>ProductPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-
-    <title>Document</title>
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-</html>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/reddit_gold.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Login
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Sign In</li>
-                        <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""> TechProShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="loginpage.html">Sign In</a></li> <!-- Closed the <li> tag here -->
+                            <li><a class="dropdown-item" href="registrationpage.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                    <a href="checkoutpage.html">
+                        <li class="shopping-cart">
+                            <img src="images/shopping-cart.png" alt="shoppingcart">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+                    </a>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <section>
+        <div class="NewProducts">
+            <h2>New Products</h2>
+        </div>
+    </section>
+    <section>
+        <div class="card-group">
+            <div class="card">
+                <img src="images/productlaptop.jpg" class="card-img-top" alt="Image of laptop">
+                <div class="card-body">
+                    <h5 class="card-title">Asus G713PVDS94 17.3 inch ROG Strix G17 Gaming Laptop</h5>
+                    <p class="card-text"> As a purpose-built gaming machine, The Strix G17 has a fast QHD 240Hz/3ms
+                        panel to help you stay locked to your target. It also covers 100% of the DCI-P3 color space and
+                        feature Dolby Vision and Adaptive-Sync support for a stellar viewing experience. MUX Switch with
+                        Advanced Optimus. With games added all the time, theres always something new to play.</p>
+                    <p class="price">
+                        $1,399
+                    </p>
+                    <button type="button" class="addtocart">Add to cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/smartphonehomepage.jpg" class="card-img-top" alt="Image of smartphone">
+                <div class="card-body">
+                    <h5 class="card-title">Apple Iphone X</h5>
+                    <p class="card-text">Our vision has always been to create an iPhone that is entirely screen. One so
+                        immersive the device itself disappears into the experience. And so intelligent it can respond to
+                        a tap, your voice, and even a glance. With iPhone X, that vision is now a reality. Say hello to
+                        the future.</p>
+                    <p class="price">
+                        $999.99
+                    </p>
+                    <button type="button" class="addtocart">Add to cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/productdesktop.jpg" class="card-img-top" alt="Image of desktop tower">
+                <div class="card-body">
+                    <h5 class="card-title">HP Z2 G9 Tower Workstation</h5>
+                    <p class="card-text">Designed to boost creative workflows for video editors, special effects
+                        artists, and 3D modelers, the Z2 G9 Tower Workstation from HP delivers a whole new level of
+                        multi-threaded app performance for fast rendering, simulation, and real-time ray tracing.</p>
+                    <p class="price">
+                        $1,199.99
+                    </p>
+                    <button type="button" class="addtocart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="card-group">
+            <div class="card">
+                <img src="images/productkeyboard.jpg" class="card-img-top" alt="Image of keyboard">
+                <div class="card-body">
+                    <h5 class="card-title">HP 150 Wired Keyboard - Full-Sized</h5>
+                    <p class="card-text">Pick up and go with this perfect plug-in-play companion, a comfortable keyboard
+                        with all the bells and whistles for wherever your journey takes you. This chiclet-style
+                        keyboard's design is sleek. The low-profile design keeps keystrokes quick, comfy, and quite
+                        accurate...just your type. Common controls are integrated into 12 shortcut combos with the Fn
+                        keymusic, movies, volume, homepage, bookmarks, and email. Now that's a shortcut above. Get to
+                        typing quicker with the USB plug-and-play setup that'll have you connecting to your PC faster
+                        and easier than ever. This keyboard is designed for optimal comfortable to fit your natural
+                        position, keeping your wrist feeling good all day</p>
+                    <p class="price">
+                        $12.99
+                    </p>
+                    <button type="button" class="addtocart">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/productheadset.jpg" class="card-img-top" alt="Image of headset">
+                <div class="card-body">
+                    <h5 class="card-title">Turtle Beach Ear Force Recon 50P Gaming Headset
+                    </h5>
+                    <p class="card-text">Experience the crystal clear audio of the EAR FORCE Recon 50P. Featuring 40mm
+                        speakers, an adjustable/removable mic, and in-line controls for Mic Mute/Volume, the Recon 50P
+                        connects to the PlayStation4 controller, PS Vita, PC, Mac, mobile/tablet devices, new Xbox One
+                        controller, and other Xbox One controllers via the EAR FORCE Headset Audio Controller (sold
+                        separately). .</p>
+                    <p class="price">
+                        $24.99
+                    </p>
+                    <button type="button" class="addtocart">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/productmouse.jpg" class="card-img-top" alt="Image of computer mouse">
+                <div class="card-body">
+                    <h5 class="card-title">Logitech M240 Silent Bluetooth Mouse (Rose)
+                    </h5>
+                    <p class="card-text">Meet M240 Silent: the reliable Bluetooth mouse that frees up your workspace.
+                        Pair in seconds with a fast: easy Bluetooth connection no dongle or port required. The
+                        ultra-quiet mouse features a 90% reduced click sound with that same click feel: eliminating
+                        noise and distractions for you and others around you. 1 A comfortable: contoured shape follows
+                        the natural curve of your hand so you can stay productive longer: and focus on what you do best.
+                        Built with the same quality standards that has made Logitech a leader in mice and keyboards.
+                    </p>
+                    <p class="price">
+                        $29.99
+                    </p>
+                    <button type="button" class="addtocart">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="products-bottom">
+            <ul>
+                <li>Free Shipping on Orders over $50.</li>
+                <li>&#169;2004 - 2023 TechProShop All Rights Reserved</li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
